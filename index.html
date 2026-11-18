@@ -6,6 +6,8 @@
 <title>Zayni Tsabit Salam · Web Designer &amp; Builder</title>
 <meta name="description" content="Zayni Tsabit Salam, Web Designer &amp; Builder dari Purworejo. Merancang dan membangun website serta sistem donasi untuk yayasan dan komunitas.">
 <meta name="theme-color" content="#16191D">
+<meta name="color-scheme" content="dark">
+<meta name="text-scale" content="scale">
 <meta property="og:title" content="Zayni Tsabit Salam · Web Designer &amp; Builder">
 <meta property="og:description" content="Website dan sistem donasi untuk yayasan dan komunitas, dari coretan pertama sampai bermanfaat untuk banyak orang.">
 <meta property="og:type" content="website">
@@ -22,13 +24,17 @@ html{scroll-behavior:smooth}
 
 body{margin:0;background:#16191D}
 a{color:#7DD3FC}a:hover{color:#BAE6FD}
+html{color-scheme:dark}
+h1,h2,h3{text-wrap:balance}
+p,li{text-wrap:pretty}
 .mono{font-family:'JetBrains Mono',monospace}
-.drift{background-image:linear-gradient(120deg,#1B2A3A,#1B2F38,#1B2F28,#1B2A3A,#1F3347,#1B2A3A);background-size:400% 400%;animation-name:drift;animation-timing-function:ease-in-out;animation-iteration-count:2;animation-fill-mode:forwards}
+.drift{background-image:linear-gradient(120deg,#1B2A3A,#1B2F38,#1B2F28,#1B2A3A,#1F3347,#1B2A3A);background-size:400% 400%;}
+@media (prefers-reduced-motion: no-preference){.drift{animation-name:drift;animation-timing-function:ease-in-out;animation-iteration-count:2;animation-fill-mode:forwards}}
 @keyframes drift{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
-.cursor{animation:blink 1.1s steps(1) 5}
+@media (prefers-reduced-motion: no-preference){.cursor{animation:blink 1.1s steps(1) 5}}
 @keyframes blink{50%{opacity:0}}
 .sw{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none}
-.swl{display:inline-flex;align-items:center;gap:8px;padding:0 14px;min-height:44px;border-radius:999px;background:rgba(255,255,255,0.08);font-size:13px;cursor:pointer}
+.swl{display:inline-flex;align-items:center;gap:8px;padding:0 14px;min-height:44px;border-radius:999px;background:rgba(255,255,255,0.08);font-size:0.8125rem;cursor:pointer}
 a,label{cursor:pointer}
 a:focus-visible,.swl:focus-visible{outline:2px solid #F2F0EA;outline-offset:3px;border-radius:4px}
 .root:has(#t1:focus-visible) label[for=t1],.root:has(#t2:focus-visible) label[for=t2],.root:has(#t3:focus-visible) label[for=t3],.root:has(#t4:focus-visible) label[for=t4]{outline:2px solid #F2F0EA;outline-offset:3px}
@@ -39,14 +45,13 @@ a:focus-visible,.swl:focus-visible{outline:2px solid #F2F0EA;outline-offset:3px;
 .root:has(#t4:checked) .drift{background-image:linear-gradient(120deg,#2A2340,#3A2236,#33211A,#2A2340,#212A44,#2A2340)}
 .card>div:last-child{flex:1}.card a.mono{margin-top:auto}
 .card{background:#1D2126;border:1px solid #2C323A;border-radius:20px;overflow:hidden;display:flex;flex-direction:column;}
-.tag{display:inline-block;padding:5px 11px;border-radius:8px;background:#2A3037;font-size:12.5px;color:#D5D8DF}
-.lab{font-size:13px;letter-spacing:0.02em;font-weight:500;color:#7DD3FC}
-.h2{margin:0;font-weight:500;font-size:clamp(26px,5vw,34px);line-height:1.15;letter-spacing:-0.02em}
+.tag{display:inline-block;padding:5px 11px;border-radius:8px;background:#2A3037;font-size:0.7812rem;color:#D5D8DF}
+.lab{font-size:0.8125rem;letter-spacing:0.02em;font-weight:500;color:#7DD3FC}
+.h2{margin:0;font-weight:500;font-size:clamp(1.625rem,1rem + 2.5vw,2.125rem);line-height:1.15;letter-spacing:-0.02em}
 @media (max-width:640px){.stack{gap:64px !important}main>div{border-top:1px solid #3A414A;padding-top:56px;margin-top:32px}main>div:first-child{border-top:0;padding-top:0;margin-top:0}.row{padding:20px 0}}
 .row{display:flex;gap:20px;padding:18px 0;border-top:1px solid #2C323A}
-.row .y{width:120px;flex:none;font-size:13px;color:#A9AFB8}
+.row .y{width:120px;flex:none;font-size:0.8125rem;color:#A9AFB8}
 @media (max-width:640px){.row{flex-direction:column;gap:4px}.row .y{width:auto}}
-@media (prefers-reduced-motion: reduce){.drift,.cursor{animation:none}}
 .code{position:absolute;line-height:1.7;pointer-events:none;white-space:nowrap;user-select:none}
 @media (max-width:1200px){.code{display:none}}
 .mk{position:relative;display:inline;color:#fff;font-weight:700;text-shadow:0 1px 0 rgba(0,0,0,.35);padding:0 .12em;margin:0 -.12em;background:linear-gradient(100deg,transparent 0,color-mix(in srgb,var(--mk,var(--ac)) 78%,transparent) 3%,color-mix(in srgb,var(--mk,var(--ac)) 68%,transparent) 97%,transparent 100%) no-repeat 0 78%/0% 62%;-webkit-box-decoration-break:clone;box-decoration-break:clone;border-radius:.18em .4em .22em .35em;animation:mk 1.1s cubic-bezier(.6,.05,.2,1) .5s forwards}
@@ -58,31 +63,31 @@ a:focus-visible,.swl:focus-visible{outline:2px solid #F2F0EA;outline-offset:3px;
 </style>
 </head>
 <body>
-<div class="root" style="--ac: #38BDF8; position: relative; overflow-x: clip; min-height: 100vh; background-color: #16191D;  color: #F2F0EA; font-family: 'Space Grotesk', system-ui, sans-serif; padding: 16px 16px 64px; box-sizing: border-box; font-size: 17px; line-height: 1.6">
+<div class="root" style="--ac: #38BDF8; position: relative; overflow-x: clip; min-height: 100vh; background-color: #16191D;  color: #F2F0EA; font-family: 'Space Grotesk', system-ui, sans-serif; padding: 16px 16px 64px; box-sizing: border-box; font-size: 1.0625rem; line-height: 1.6">
 <input class="sw" type="radio" name="tema" id="t1" checked><input class="sw" type="radio" name="tema" id="t2"><input class="sw" type="radio" name="tema" id="t3"><input class="sw" type="radio" name="tema" id="t4">
-<div class="mono code" aria-hidden="true" style="top: 120px; left: 24px; font-size: 13px; color: rgba(242,240,234,0.14); filter: blur(2px); transform: rotate(-2deg)">&lt;section class="hero"&gt;<br>&nbsp;&nbsp;&lt;h1&gt;Zayn&lt;/h1&gt;<br>&lt;/section&gt;</div>
-<div class="mono code" aria-hidden="true" style="top: 560px; right: 40px; font-size: 13px; color: rgba(242,240,234,0.16); filter: blur(0px); transform: rotate(1.5deg)">function bangun(ide) {<br>&nbsp;&nbsp;return desain(ide)<br>&nbsp;&nbsp;&nbsp;&nbsp;.rapi().teliti();<br>}</div>
-<div class="mono code" aria-hidden="true" style="top: 820px; left: 20px; font-size: 15px; color: rgba(242,240,234,0.13); filter: blur(4px); transform: rotate(-1.5deg)">.kartu:hover {<br>&nbsp;&nbsp;transform: rotate(.8deg);<br>&nbsp;&nbsp;border: 1px solid #38BDF8;<br>}</div>
-<div class="mono code" aria-hidden="true" style="top: 1000px; right: 24px; font-size: 14px; color: rgba(242,240,234,0.15); filter: blur(6px); transform: rotate(2deg)">git commit -m "rilis donasi"<br>git push origin main</div>
-<div class="mono code" aria-hidden="true" style="top: 1480px; right: 28px; font-size: 13px; color: rgba(242,240,234,0.15); filter: blur(0px); transform: rotate(-1deg)">npm run build<br>✓ astro build selesai<br>✓ deploy ke cloudflare</div>
-<div class="mono code" aria-hidden="true" style="top: 1700px; left: 28px; font-size: 13px; color: rgba(242,240,234,0.14); filter: blur(3px); transform: rotate(1.5deg)">SELECT * FROM donatur<br>&nbsp;&nbsp;WHERE peran = 'amil';</div>
-<div class="mono code" aria-hidden="true" style="top: 1960px; right: 20px; font-size: 15px; color: rgba(242,240,234,0.13); filter: blur(7px); transform: rotate(-2deg)">&lt;Route path="/admin"<br>&nbsp;&nbsp;role="fundraiser" /&gt;</div>
-<div class="mono code" aria-hidden="true" style="top: 2240px; left: 24px; font-size: 13px; color: rgba(242,240,234,0.15); filter: blur(1px); transform: rotate(1deg)">const donasi = {<br>&nbsp;&nbsp;qris: true,<br>&nbsp;&nbsp;transfer: true,<br>};</div>
-<div class="mono code" aria-hidden="true" style="top: 2560px; right: 36px; font-size: 13px; color: rgba(242,240,234,0.17); filter: blur(0px); transform: rotate(0deg)">// ide → desain → bangun → rilis</div>
-<div class="mono code" aria-hidden="true" style="top: 2820px; left: 30px; font-size: 15px; color: rgba(242,240,234,0.13); filter: blur(5px); transform: rotate(-1.5deg)">body {<br>&nbsp;&nbsp;font-family: "Space Grotesk";<br>&nbsp;&nbsp;background: #16191D;<br>}</div>
-<div class="mono code" aria-hidden="true" style="top: 3100px; right: 24px; font-size: 13px; color: rgba(242,240,234,0.16); filter: blur(0px); transform: rotate(1.5deg)">const rapi = true;<br>const teliti = true;<br>const rendahHati = true;</div>
-<div class="mono code" aria-hidden="true" style="top: 3340px; left: 26px; font-size: 13px; color: rgba(242,240,234,0.16); filter: blur(2px); transform: rotate(0deg)">zaynlabs.ai.id<br>&gt; online_</div>
+<div class="mono code" aria-hidden="true" style="top: 120px; left: 24px; font-size: 0.8125rem; color: rgba(242,240,234,0.14); filter: blur(2px); transform: rotate(-2deg)">&lt;section class="hero"&gt;<br>&nbsp;&nbsp;&lt;h1&gt;Zayn&lt;/h1&gt;<br>&lt;/section&gt;</div>
+<div class="mono code" aria-hidden="true" style="top: 560px; right: 40px; font-size: 0.8125rem; color: rgba(242,240,234,0.16); filter: blur(0px); transform: rotate(1.5deg)">function bangun(ide) {<br>&nbsp;&nbsp;return desain(ide)<br>&nbsp;&nbsp;&nbsp;&nbsp;.rapi().teliti();<br>}</div>
+<div class="mono code" aria-hidden="true" style="top: 820px; left: 20px; font-size: 0.9375rem; color: rgba(242,240,234,0.13); filter: blur(4px); transform: rotate(-1.5deg)">.kartu:hover {<br>&nbsp;&nbsp;transform: rotate(.8deg);<br>&nbsp;&nbsp;border: 1px solid #38BDF8;<br>}</div>
+<div class="mono code" aria-hidden="true" style="top: 1000px; right: 24px; font-size: 0.875rem; color: rgba(242,240,234,0.15); filter: blur(6px); transform: rotate(2deg)">git commit -m "rilis donasi"<br>git push origin main</div>
+<div class="mono code" aria-hidden="true" style="top: 1480px; right: 28px; font-size: 0.8125rem; color: rgba(242,240,234,0.15); filter: blur(0px); transform: rotate(-1deg)">npm run build<br>✓ astro build selesai<br>✓ deploy ke cloudflare</div>
+<div class="mono code" aria-hidden="true" style="top: 1700px; left: 28px; font-size: 0.8125rem; color: rgba(242,240,234,0.14); filter: blur(3px); transform: rotate(1.5deg)">SELECT * FROM donatur<br>&nbsp;&nbsp;WHERE peran = 'amil';</div>
+<div class="mono code" aria-hidden="true" style="top: 1960px; right: 20px; font-size: 0.9375rem; color: rgba(242,240,234,0.13); filter: blur(7px); transform: rotate(-2deg)">&lt;Route path="/admin"<br>&nbsp;&nbsp;role="fundraiser" /&gt;</div>
+<div class="mono code" aria-hidden="true" style="top: 2240px; left: 24px; font-size: 0.8125rem; color: rgba(242,240,234,0.15); filter: blur(1px); transform: rotate(1deg)">const donasi = {<br>&nbsp;&nbsp;qris: true,<br>&nbsp;&nbsp;transfer: true,<br>};</div>
+<div class="mono code" aria-hidden="true" style="top: 2560px; right: 36px; font-size: 0.8125rem; color: rgba(242,240,234,0.17); filter: blur(0px); transform: rotate(0deg)">// ide → desain → bangun → rilis</div>
+<div class="mono code" aria-hidden="true" style="top: 2820px; left: 30px; font-size: 0.9375rem; color: rgba(242,240,234,0.13); filter: blur(5px); transform: rotate(-1.5deg)">body {<br>&nbsp;&nbsp;font-family: "Space Grotesk";<br>&nbsp;&nbsp;background: #16191D;<br>}</div>
+<div class="mono code" aria-hidden="true" style="top: 3100px; right: 24px; font-size: 0.8125rem; color: rgba(242,240,234,0.16); filter: blur(0px); transform: rotate(1.5deg)">const rapi = true;<br>const teliti = true;<br>const rendahHati = true;</div>
+<div class="mono code" aria-hidden="true" style="top: 3340px; left: 26px; font-size: 0.8125rem; color: rgba(242,240,234,0.16); filter: blur(2px); transform: rotate(0deg)">zaynlabs.ai.id<br>&gt; online_</div>
 <div class="stack" style="position: relative; max-width: 1040px; margin: 0 auto; display: flex; flex-direction: column; gap: 64px">
 
 <div class="drift" role="banner" style="animation-duration: 14s; border-radius: 28px; padding: clamp(24px, 5vw, 48px); display: flex; flex-direction: column; gap: 20px">
 <div style="display: contents">
-<div role="img" aria-label="zaynlabs" style="display: flex; align-items: flex-start; font-size: 28px; letter-spacing: -0.04em; line-height: 1"><span style="font-weight: 700">zayn</span><span style="font-weight: 400; color: #C7CBD3">labs</span><span class="cursor" aria-hidden="true" style="display: block; width: 14px; height: 3px; background: #38BDF8; margin: 21px 0 0 3px"></span></div>
-<h1 style="margin: 0; font-weight: 500; font-size: clamp(34px, 9vw, 64px); line-height: 1.05; letter-spacing: -0.03em">Zayni Tsabit Salam<span class="cursor" aria-hidden="true" style="display: inline-block; width: 0.11em; height: 0.82em; margin-left: 0.14em; vertical-align: -0.04em; background: #38BDF8"></span></h1>
-<div style="font-size: clamp(18px, 4vw, 24px); font-weight: 500"><span class="mk">Web Designer &amp; Builder</span></div>
-<p style="margin: 0; max-width: 600px; color: #D5D8DF">Merancang dan membangun website serta sistem donasi untuk yayasan dan komunitas, dari coretan pertama sampai <span class="mk d2">bermanfaat untuk banyak orang</span>. Berbasis di Purworejo.</p>
+<div role="img" aria-label="zaynlabs" style="display: flex; align-items: flex-start; font-size: 1.75rem; letter-spacing: -0.04em; line-height: 1"><span style="font-weight: 700">zayn</span><span style="font-weight: 400; color: #C7CBD3">labs</span><span class="cursor" aria-hidden="true" style="display: block; width: 0.5em; height: 0.11em; background: #38BDF8; margin: 0.75em 0 0 0.11em"></span></div>
+<h1 style="margin: 0; font-weight: 500; font-size: clamp(2.125rem, 1rem + 5.2vw, 4rem); line-height: 1.05; letter-spacing: -0.03em">Zayni Tsabit Salam<span class="cursor" aria-hidden="true" style="display: inline-block; width: 0.11em; height: 0.82em; margin-left: 0.14em; vertical-align: -0.04em; background: #38BDF8"></span></h1>
+<div style="font-size: clamp(1.125rem, 1rem + 1vw, 1.5rem); font-weight: 500"><span class="mk">Web Designer &amp; Builder</span></div>
+<p style="margin: 0; max-width: 60ch; color: #D5D8DF">Merancang dan membangun website serta sistem donasi untuk yayasan dan komunitas, dari coretan pertama sampai <span class="mk d2">bermanfaat untuk banyak orang</span>. Berbasis di Purworejo.</p>
 <div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center">
 <a href="#karya" style="display: inline-flex; align-items: center; min-height: 46px; padding: 0 22px; border-radius: 10px; background: #38BDF8; color: #16191D; font-weight: 700; text-decoration: none">Intip karya</a>
-<a href="https://t.me/zaynassalam" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 46px; padding: 0 22px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.28); color: #F2F0EA; font-weight: 500; text-decoration: none">Chat via Telegram</a><span class="mono swlab" style="font-size: 13px; color: #D5D8DF; margin-left: 6px">ganti warna:</span>
+<a href="https://t.me/zaynassalam" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 46px; padding: 0 22px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.28); color: #F2F0EA; font-weight: 500; text-decoration: none">Chat via Telegram</a><span class="mono swlab" style="font-size: 0.8125rem; color: #D5D8DF; margin-left: 6px">ganti warna:</span>
 <label class="swl" for="t1"><i style="background: #2F5D86"></i>Biru</label><label class="swl" for="t2"><i style="background: #6B3A28"></i>Hangat</label><label class="swl" for="t3"><i style="background: #2F7A58"></i>Hijau</label><label class="swl" for="t4"><i style="background: #6C54B0"></i>Ungu</label>
 </div>
 </div>
@@ -90,11 +95,11 @@ a:focus-visible,.swl:focus-visible{outline:2px solid #F2F0EA;outline-offset:3px;
 
 <main style="display: contents">
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 32px; align-items: start">
-<div style="display: flex; flex-direction: column; gap: 12px"><h2 class="lab mono" style="margin: 0">TENTANG</h2><p style="margin: 0; font-size: 19px; line-height: 1.6">Mulai berkarya sejak 2021 lewat desain dan media sosial, lalu pelan-pelan masuk ke web. Sekarang merancang antarmuka sekaligus membangunnya, dibantu AI coding assistant, untuk yayasan dan komunitas yang butuh website dan sistem donasi yang rapi dan mudah dipakai.</p></div>
+<div style="display: flex; flex-direction: column; gap: 12px"><h2 class="lab mono" style="margin: 0">TENTANG</h2><p style="margin: 0; font-size: 1.1875rem; line-height: 1.6">Mulai berkarya sejak 2021 lewat desain dan media sosial, lalu pelan-pelan masuk ke web. Sekarang merancang antarmuka sekaligus membangunnya, dibantu AI coding assistant, untuk yayasan dan komunitas yang butuh website dan sistem donasi yang rapi dan mudah dipakai.</p></div>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100px, 100%), 1fr)); gap: 12px">
-<div style="background: #1D2126; border: 1px solid #2C323A; border-radius: 16px; padding: 14px"><div style="font-size: clamp(24px, 6.5vw, 32px); font-weight: 500">2021</div><div style="font-size: 13.5px; color: #A9AFB8; line-height: 1.4">tahun mulai berkarya</div></div>
-<div style="background: #1D2126; border: 1px solid #2C323A; border-radius: 16px; padding: 14px"><div style="font-size: clamp(24px, 6.5vw, 32px); font-weight: 500">3</div><div style="font-size: 13.5px; color: #A9AFB8; line-height: 1.4">website yang bisa dibuka</div></div>
-<div style="background: #1D2126; border: 1px solid #2C323A; border-radius: 16px; padding: 14px"><div style="font-size: clamp(24px, 6.5vw, 32px); font-weight: 500">3</div><div style="font-size: 13.5px; color: #A9AFB8; line-height: 1.4">yayasan dan komunitas</div></div>
+<div style="background: #1D2126; border: 1px solid #2C323A; border-radius: 16px; padding: 14px"><div style="font-size: clamp(1.5rem, 1rem + 2.5vw, 2rem); font-weight: 500">2021</div><div style="font-size: 0.8438rem; color: #A9AFB8; line-height: 1.4">tahun mulai berkarya</div></div>
+<div style="background: #1D2126; border: 1px solid #2C323A; border-radius: 16px; padding: 14px"><div style="font-size: clamp(1.5rem, 1rem + 2.5vw, 2rem); font-weight: 500">3</div><div style="font-size: 0.8438rem; color: #A9AFB8; line-height: 1.4">website yang bisa dibuka</div></div>
+<div style="background: #1D2126; border: 1px solid #2C323A; border-radius: 16px; padding: 14px"><div style="font-size: clamp(1.5rem, 1rem + 2.5vw, 2rem); font-weight: 500">3</div><div style="font-size: 0.8438rem; color: #A9AFB8; line-height: 1.4">yayasan dan komunitas</div></div>
 </div>
 </div>
 
@@ -105,34 +110,34 @@ a:focus-visible,.swl:focus-visible{outline:2px solid #F2F0EA;outline-offset:3px;
 <div class="card">
 <div style="background: #222B35; padding: 20px; display: flex; flex-direction: column; gap: 10px"><div style="border-radius: 10px; overflow: hidden"><img loading="lazy" decoding="async" width="1356" height="1057" src="assets/yasuki-hero.jpg" alt="Website YASUKI" style="display: block; width: 100%; height: auto"></div><div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px"><div style="border-radius: 8px; overflow: hidden; aspect-ratio: 16 / 10"><img loading="lazy" decoding="async" width="1356" height="550" src="assets/yasuki-program.jpg" alt="Halaman program di website YASUKI" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: top"></div><div style="border-radius: 8px; overflow: hidden; aspect-ratio: 16 / 10"><img loading="lazy" decoding="async" width="1356" height="410" src="assets/yasuki-berita.jpg" alt="Halaman berita di website YASUKI" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: top"></div></div></div>
 <div style="padding: 22px; display: flex; flex-direction: column; gap: 10px">
-<span class="mono" style="font-size: 12px; color: #A9AFB8">YASUKI · 2023–SEKARANG</span>
-<h3 style="margin: 0; font-size: 20px; font-weight: 700">Website dan donasi YASUKI</h3>
-<span style="font-size: 15.5px; color: #D5D8DF">Website yayasan di Purworejo, ditambah landing page donasi Masjid Darussalam yang terhubung ke iklan Meta Ads dan checkout Scalev.</span><ul style="margin: 0; padding-left: 18px; font-size: 15px; color: #C9CDD6; display: flex; flex-direction: column; gap: 4px"><li>Form donasi lewat QRIS dan transfer bank</li><li>Dashboard admin dengan akses per peran untuk verifikasi donasi, berita, dan program</li><li>Pencatatan donatur dan transaksi untuk amil dan fundraiser</li></ul>
+<span class="mono" style="font-size: 0.75rem; color: #A9AFB8">YASUKI · 2023–SEKARANG</span>
+<h3 style="margin: 0; font-size: 1.25rem; font-weight: 700">Website dan donasi YASUKI</h3>
+<span style="font-size: 0.9688rem; color: #D5D8DF">Website yayasan di Purworejo, ditambah landing page donasi Masjid Darussalam yang terhubung ke iklan Meta Ads dan checkout Scalev.</span><ul style="margin: 0; padding-left: 18px; font-size: 0.9375rem; color: #C9CDD6; display: flex; flex-direction: column; gap: 4px"><li>Form donasi lewat QRIS dan transfer bank</li><li>Dashboard admin dengan akses per peran untuk verifikasi donasi, berita, dan program</li><li>Pencatatan donatur dan transaksi untuk amil dan fundraiser</li></ul>
 <div style="display: flex; flex-wrap: wrap; gap: 6px"><span class="tag mono">Astro</span><span class="tag mono">Tailwind</span><span class="tag mono">Cloudflare</span><span class="tag mono">Meta Ads</span></div>
-<a href="https://yasuki.site" class="mono" style="display: inline-block; padding: 12px 0; font-size: 13px">yasuki.site ↗</a>
+<a href="https://yasuki.site" class="mono" style="display: inline-block; padding: 12px 0; font-size: 0.8125rem">yasuki.site ↗</a>
 </div>
 </div>
 
 <div class="card">
 <div style="background: #222B35; padding: 20px; display: flex; flex-direction: column; gap: 10px"><div style="border-radius: 10px; overflow: hidden"><img loading="lazy" decoding="async" width="1356" height="1057" src="assets/yacim-hero.jpg" alt="Website YACIM" style="display: block; width: 100%; height: auto"></div><div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px"><div style="border-radius: 8px; overflow: hidden; aspect-ratio: 16 / 10"><img loading="lazy" decoding="async" width="1356" height="1120" src="assets/yacim-program.jpg" alt="Halaman program di website YACIM" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: top"></div><div style="border-radius: 8px; overflow: hidden; aspect-ratio: 16 / 10"><img loading="lazy" decoding="async" width="1356" height="820" src="assets/yacim-kabar.jpg" alt="Halaman kabar di website YACIM" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: top"></div></div></div>
 <div style="padding: 22px; display: flex; flex-direction: column; gap: 10px">
-<span class="mono" style="font-size: 12px; color: #A9AFB8">YACIM · 2026–SEKARANG</span>
-<h3 style="margin: 0; font-size: 20px; font-weight: 700">Website profil YACIM</h3>
-<span style="font-size: 15.5px; color: #D5D8DF">Website profil Yayasan Cahaya Ilahi di Magelang, dari rancangan antarmuka sampai rilis.</span><ul style="margin: 0; padding-left: 18px; font-size: 15px; color: #C9CDD6; display: flex; flex-direction: column; gap: 4px"><li>Profil, program, berita, galeri, dan tombol donasi dalam satu website</li><li>Tampilan dirancang dan dibangun langsung, dibantu AI coding assistant</li></ul>
+<span class="mono" style="font-size: 0.75rem; color: #A9AFB8">YACIM · 2026–SEKARANG</span>
+<h3 style="margin: 0; font-size: 1.25rem; font-weight: 700">Website profil YACIM</h3>
+<span style="font-size: 0.9688rem; color: #D5D8DF">Website profil Yayasan Cahaya Ilahi di Magelang, dari rancangan antarmuka sampai rilis.</span><ul style="margin: 0; padding-left: 18px; font-size: 0.9375rem; color: #C9CDD6; display: flex; flex-direction: column; gap: 4px"><li>Profil, program, berita, galeri, dan tombol donasi dalam satu website</li><li>Tampilan dirancang dan dibangun langsung, dibantu AI coding assistant</li></ul>
 <div style="display: flex; flex-wrap: wrap; gap: 6px"><span class="tag mono">Laravel</span><span class="tag mono">MySQL</span><span class="tag mono">Tailwind</span><span class="tag mono">cPanel</span></div>
-<a href="https://sahabatyacim.com" class="mono" style="display: inline-block; padding: 12px 0; font-size: 13px">sahabatyacim.com ↗</a>
+<a href="https://sahabatyacim.com" class="mono" style="display: inline-block; padding: 12px 0; font-size: 0.8125rem">sahabatyacim.com ↗</a>
 </div>
 </div>
 
 <div class="card">
 <div style="background: #1F2B26; padding: 20px; min-height: 150px; display: flex; flex-direction: column; justify-content: center; gap: 8px">
 <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap"><span class="tag mono">Donatur</span><span class="mono">→</span><span class="tag mono">Transaksi</span><span class="mono">→</span><span class="tag mono" style="background: #F2F0EA; color: #16191D">Tercatat</span></div>
-<div class="mono" style="font-size: 12.5px; color: #A9AFB8">akses per peran: admin · amil · fundraiser</div>
+<div class="mono" style="font-size: 0.7812rem; color: #A9AFB8">akses per peran: admin · amil · fundraiser</div>
 </div>
 <div style="padding: 22px; display: flex; flex-direction: column; gap: 10px">
-<span class="mono" style="font-size: 12px; color: #A9AFB8">YACIM · 2026–SEKARANG</span>
-<h3 style="margin: 0; font-size: 20px; font-weight: 700">Aplikasi pencatatan donasi</h3>
-<span style="font-size: 15.5px; color: #D5D8DF">Aplikasi untuk mencatat donatur, transaksi, dan program yang dipakai amil dan fundraiser YACIM.</span><ul style="margin: 0; padding-left: 18px; font-size: 15px; color: #C9CDD6; display: flex; flex-direction: column; gap: 4px"><li>Data donatur, transaksi, dan program dalam satu tempat</li><li>Akses yang berbeda untuk tiap peran</li></ul>
+<span class="mono" style="font-size: 0.75rem; color: #A9AFB8">YACIM · 2026–SEKARANG</span>
+<h3 style="margin: 0; font-size: 1.25rem; font-weight: 700">Aplikasi pencatatan donasi</h3>
+<span style="font-size: 0.9688rem; color: #D5D8DF">Aplikasi untuk mencatat donatur, transaksi, dan program yang dipakai amil dan fundraiser YACIM.</span><ul style="margin: 0; padding-left: 18px; font-size: 0.9375rem; color: #C9CDD6; display: flex; flex-direction: column; gap: 4px"><li>Data donatur, transaksi, dan program dalam satu tempat</li><li>Akses yang berbeda untuk tiap peran</li></ul>
 <div style="display: flex; flex-wrap: wrap; gap: 6px"><span class="tag mono">Laravel</span><span class="tag mono">MySQL</span><span class="tag mono">Tailwind</span><span class="tag mono">cPanel</span></div>
 </div>
 </div>
@@ -140,9 +145,9 @@ a:focus-visible,.swl:focus-visible{outline:2px solid #F2F0EA;outline-offset:3px;
 <div class="card">
 <div style="background: #2B2620; padding: 20px; display: flex; flex-direction: column; gap: 10px"><div style="border-radius: 10px; overflow: hidden; background: #fff"><img loading="lazy" decoding="async" width="854" height="595" src="assets/buku-warna.jpg" alt="Halaman latihan menulis Abata berwarna: alif di tengah dan shad di tengah" style="display: block; width: 100%; height: auto"></div><div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px"><div style="border-radius: 8px; overflow: hidden; background: #fff; aspect-ratio: 16 / 10"><img loading="lazy" decoding="async" width="866" height="595" src="assets/buku-naskhi.png" alt="Halaman latihan menulis buku Naskhi" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: top"></div><div style="border-radius: 8px; overflow: hidden; background: #fff; aspect-ratio: 16 / 10"><img loading="lazy" decoding="async" width="390" height="510" src="assets/buku-abata.png" alt="Halaman penutup buku ABATA" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: top"></div></div></div>
 <div style="padding: 22px; display: flex; flex-direction: column; gap: 10px">
-<span class="mono" style="font-size: 12px; color: #A9AFB8">BUKU · 2021–2022</span>
-<h3 style="margin: 0; font-size: 20px; font-weight: 700">Desain isi buku seri Naskhi dan ABATA</h3>
-<span style="font-size: 15.5px; color: #D5D8DF">Tata letak buku latihan menulis Arab untuk anak (Ayo belajar Menulis Arab Tekun dan Aktif).</span>
+<span class="mono" style="font-size: 0.75rem; color: #A9AFB8">BUKU · 2021–2022</span>
+<h3 style="margin: 0; font-size: 1.25rem; font-weight: 700">Desain isi buku seri Naskhi dan ABATA</h3>
+<span style="font-size: 0.9688rem; color: #D5D8DF">Tata letak buku latihan menulis Arab untuk anak (Ayo belajar Menulis Arab Tekun dan Aktif).</span>
 <div style="display: flex; flex-wrap: wrap; gap: 6px"><span class="tag mono">Figma</span><span class="tag mono">Layout buku</span></div>
 </div>
 </div>
@@ -152,20 +157,20 @@ a:focus-visible,.swl:focus-visible{outline:2px solid #F2F0EA;outline-offset:3px;
 
 <div style="display: flex; flex-direction: column; gap: 8px">
 <div style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 8px"><div class="lab mono">PENGALAMAN</div><h2 class="h2">Pengalaman kerja.</h2></div>
-<div class="row"><span class="y mono">2023–sekarang</span><div><b>YASUKI</b>, Tim Kreatif &amp; Digital<div style="font-size: 15.5px; color: #C9CDD6">Memegang seluruh urusan digital yayasan sejak 2023: dokumentasi, desain grafis, konten media sosial, kalender, skrip video, sampai website, sistem donasi, dan iklan Meta Ads.</div></div></div>
-<div class="row"><span class="y mono">2026–sekarang</span><div><b>YACIM</b>, Web Designer &amp; Builder<div style="font-size: 15.5px; color: #C9CDD6">Merancang dan membangun website profil serta aplikasi pencatatan donasi untuk yayasan di Magelang.</div></div></div>
-<div class="row"><span class="y mono">2026–sekarang</span><div><b>Proyek personal</b>, Web Designer &amp; Video Editor<div style="font-size: 15.5px; color: #C9CDD6">Website profil dua bahasa (ID/EN) untuk klien perorangan (<a href="https://sofyannurhardiansyah.my.id">lihat website</a>), serta editing video talking head untuk Reels dan TikTok.</div></div></div>
-<div class="row"><span class="y mono">2022–2023</span><div><b>KOMIJADIY</b>, Tim Kreatif &amp; Social Media Specialist<div style="font-size: 15.5px; color: #C9CDD6">Mengurus konten dan dokumentasi komunitas, lalu menjadi social media specialist untuk pelatihan Akademi Bisnis Indonesia (ABI).</div></div></div>
-<div class="row"><span class="y mono">2021–2022</span><div><b>Buku seri Naskhi &amp; ABATA</b>, Layout Designer<div style="font-size: 15.5px; color: #C9CDD6">Mendesain isi buku latihan menulis Arab untuk anak (Ayo belajar Menulis Arab Tekun dan Aktif).</div></div></div>
+<div class="row"><span class="y mono">2023–sekarang</span><div><b>YASUKI</b>, Tim Kreatif &amp; Digital<div style="font-size: 0.9688rem; color: #C9CDD6">Memegang seluruh urusan digital yayasan sejak 2023: dokumentasi, desain grafis, konten media sosial, kalender, skrip video, sampai website, sistem donasi, dan iklan Meta Ads.</div></div></div>
+<div class="row"><span class="y mono">2026–sekarang</span><div><b>YACIM</b>, Web Designer &amp; Builder<div style="font-size: 0.9688rem; color: #C9CDD6">Merancang dan membangun website profil serta aplikasi pencatatan donasi untuk yayasan di Magelang.</div></div></div>
+<div class="row"><span class="y mono">2026–sekarang</span><div><b>Proyek personal</b>, Web Designer &amp; Video Editor<div style="font-size: 0.9688rem; color: #C9CDD6">Website profil dua bahasa (ID/EN) untuk klien perorangan (<a href="https://sofyannurhardiansyah.my.id">lihat website</a>), serta editing video talking head untuk Reels dan TikTok.</div></div></div>
+<div class="row"><span class="y mono">2022–2023</span><div><b>KOMIJADIY</b>, Tim Kreatif &amp; Social Media Specialist<div style="font-size: 0.9688rem; color: #C9CDD6">Mengurus konten dan dokumentasi komunitas, lalu menjadi social media specialist untuk pelatihan Akademi Bisnis Indonesia (ABI).</div></div></div>
+<div class="row"><span class="y mono">2021–2022</span><div><b>Buku seri Naskhi &amp; ABATA</b>, Layout Designer<div style="font-size: 0.9688rem; color: #C9CDD6">Mendesain isi buku latihan menulis Arab untuk anak (Ayo belajar Menulis Arab Tekun dan Aktif).</div></div></div>
 </div>
 
 <div style="display: flex; flex-direction: column; gap: 20px">
 <h2 class="lab mono" style="margin: 0">CARA KERJA</h2>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(210px, 100%), 1fr)); gap: 14px">
-<div style="background: #1D2126; border: 1px solid #2C323A; border-radius: 16px; padding: 18px"><div class="mono" style="font-size: 12px; color: #7DD3FC">01</div><b>Ide</b><div style="font-size: 14.5px; color: #C9CDD6">Mendengar dulu: apa yang dibutuhkan dan siapa yang akan memakainya.</div></div>
-<div style="background: #1D2126; border: 1px solid #2C323A; border-radius: 16px; padding: 18px"><div class="mono" style="font-size: 12px; color: #7DD3FC">02</div><b>Desain</b><div style="font-size: 14.5px; color: #C9CDD6">Merancang antarmuka dan alur yang sederhana, supaya orang tidak perlu bertanya cara memakainya.</div></div>
-<div style="background: #1D2126; border: 1px solid #2C323A; border-radius: 16px; padding: 18px"><div class="mono" style="font-size: 12px; color: #7DD3FC">03</div><b>Bangun</b><div style="font-size: 14.5px; color: #C9CDD6">Membangun website dan sistemnya, dengan bantuan AI coding assistant.</div></div>
-<div style="background: #1D2126; border: 1px solid #2C323A; border-radius: 16px; padding: 18px"><div class="mono" style="font-size: 12px; color: #7DD3FC">04</div><b>Luncurkan</b><div style="font-size: 14.5px; color: #C9CDD6">Rilis, pasang iklan atau checkout, lalu dirawat setelah berjalan.</div></div>
+<div style="background: #1D2126; border: 1px solid #2C323A; border-radius: 16px; padding: 18px"><div class="mono" style="font-size: 0.75rem; color: #7DD3FC">01</div><b>Ide</b><div style="font-size: 0.9062rem; color: #C9CDD6">Mendengar dulu: apa yang dibutuhkan dan siapa yang akan memakainya.</div></div>
+<div style="background: #1D2126; border: 1px solid #2C323A; border-radius: 16px; padding: 18px"><div class="mono" style="font-size: 0.75rem; color: #7DD3FC">02</div><b>Desain</b><div style="font-size: 0.9062rem; color: #C9CDD6">Merancang antarmuka dan alur yang sederhana, supaya orang tidak perlu bertanya cara memakainya.</div></div>
+<div style="background: #1D2126; border: 1px solid #2C323A; border-radius: 16px; padding: 18px"><div class="mono" style="font-size: 0.75rem; color: #7DD3FC">03</div><b>Bangun</b><div style="font-size: 0.9062rem; color: #C9CDD6">Membangun website dan sistemnya, dengan bantuan AI coding assistant.</div></div>
+<div style="background: #1D2126; border: 1px solid #2C323A; border-radius: 16px; padding: 18px"><div class="mono" style="font-size: 0.75rem; color: #7DD3FC">04</div><b>Luncurkan</b><div style="font-size: 0.9062rem; color: #C9CDD6">Rilis, pasang iklan atau checkout, lalu dirawat setelah berjalan.</div></div>
 </div>
 </div>
 
@@ -180,14 +185,14 @@ a:focus-visible,.swl:focus-visible{outline:2px solid #F2F0EA;outline-offset:3px;
 </div>
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 32px">
-<div style="display: flex; flex-direction: column; gap: 10px"><h2 class="lab mono" style="margin: 0">PENDIDIKAN</h2><div><b>MA Nuurul Waahid, Purworejo</b><div style="font-size: 15px; color: #A9AFB8">Lulus 2019 · formal</div></div><div><b>Pesantren Qodr, Bantul</b><div style="font-size: 15px; color: #A9AFB8">2019–2022 · nonformal, fokus UI/UX Design</div></div></div>
-<div style="display: flex; flex-direction: column; gap: 10px"><h2 class="lab mono" style="margin: 0">SERTIFIKASI &amp; BAHASA</h2><div><b>Sertifikat UI/UX Design</b><div style="font-size: 15px; color: #A9AFB8">Qodr.or.id · 2019–2022</div></div><div><b>Sertifikasi Digital Fundraiser</b><div style="font-size: 15px; color: #A9AFB8">Pondok Digital · 1 bulan</div></div><div style="font-size: 15px; color: #C9CDD6">Indonesia (native), Inggris (intermediate, B1)</div></div>
+<div style="display: flex; flex-direction: column; gap: 10px"><h2 class="lab mono" style="margin: 0">PENDIDIKAN</h2><div><b>MA Nuurul Waahid, Purworejo</b><div style="font-size: 0.9375rem; color: #A9AFB8">Lulus 2019 · formal</div></div><div><b>Pesantren Qodr, Bantul</b><div style="font-size: 0.9375rem; color: #A9AFB8">2019–2022 · nonformal, fokus UI/UX Design</div></div></div>
+<div style="display: flex; flex-direction: column; gap: 10px"><h2 class="lab mono" style="margin: 0">SERTIFIKASI &amp; BAHASA</h2><div><b>Sertifikat UI/UX Design</b><div style="font-size: 0.9375rem; color: #A9AFB8">Qodr.or.id · 2019–2022</div></div><div><b>Sertifikasi Digital Fundraiser</b><div style="font-size: 0.9375rem; color: #A9AFB8">Pondok Digital · 1 bulan</div></div><div style="font-size: 0.9375rem; color: #C9CDD6">Indonesia (native), Inggris (intermediate, B1)</div></div>
 </div>
 
 <div id="kontak" style="display: flex; flex-direction: column; gap: 22px; padding-top: 8px">
 <div style="display: flex; align-items: center; gap: 14px"><span style="flex: 0 0 40px; height: 1px; background: #38BDF8"></span><div class="lab mono">KONTAK</div></div>
-<h2 style="margin: 0; font-weight: 500; font-size: clamp(34px, 7vw, 60px); line-height: 1.08; letter-spacing: -0.03em; max-width: 720px">Punya proyek <span class="mk">website</span> atau sistem donasi?</h2>
-<p style="margin: 0; max-width: 560px; color: #C9CDD6">Terbuka untuk pekerjaan penuh waktu, proyek freelance, dan kolaborasi.</p>
+<h2 style="margin: 0; font-weight: 500; font-size: clamp(2.125rem, 1rem + 4.5vw, 3.75rem); line-height: 1.08; letter-spacing: -0.03em; max-width: 720px">Punya proyek <span class="mk">website</span> atau sistem donasi?</h2>
+<p style="margin: 0; max-width: 60ch; color: #C9CDD6">Terbuka untuk pekerjaan penuh waktu, proyek freelance, dan kolaborasi.</p>
 <div style="display: flex; flex-wrap: wrap; gap: 12px">
 <a href="https://t.me/zaynassalam" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; border-radius: 10px; background: #38BDF8; color: #16191D; font-weight: 700; text-decoration: none">Chat via Telegram</a>
 <a href="assets/CV-Zayni-Tsabit-Salam.pdf" download="CV-Zayni-Tsabit-Salam.pdf" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; border-radius: 10px; border: 1px solid #3A414A; font-weight: 500; color: inherit; text-decoration: none">Unduh CV</a>
@@ -199,7 +204,7 @@ a:focus-visible,.swl:focus-visible{outline:2px solid #F2F0EA;outline-offset:3px;
 </div>
 </div>
 </main>
-<footer class="mono" style="font-size: 12.5px; color: #A9AFB8">© 2026 Zayni Tsabit Salam · zaynlabs.ai.id</footer>
+<footer class="mono" style="font-size: 0.7812rem; color: #A9AFB8">© 2026 Zayni Tsabit Salam · zaynlabs.ai.id</footer>
 
 </div>
 </div>
