@@ -52,6 +52,7 @@ a:focus-visible,.swl:focus-visible{outline:2px solid #F2F0EA;outline-offset:3px;
 .row{display:flex;gap:20px;padding:18px 0;border-top:1px solid #2C323A}
 .row .y{width:120px;flex:none;font-size:0.8125rem;color:#A9AFB8}
 @media (max-width:640px){.row{flex-direction:column;gap:4px}.row .y{width:auto}}
+.code::before{content:attr(data-t);white-space:pre}
 .code{position:absolute;line-height:1.7;pointer-events:none;white-space:nowrap;user-select:none}
 @media (max-width:1200px){.code{display:none}}
 .mk{position:relative;display:inline;color:#fff;font-weight:700;text-shadow:0 1px 0 rgba(0,0,0,.35);padding:0 .12em;margin:0 -.12em;background:linear-gradient(100deg,transparent 0,color-mix(in srgb,var(--mk,var(--ac)) 78%,transparent) 3%,color-mix(in srgb,var(--mk,var(--ac)) 68%,transparent) 97%,transparent 100%) no-repeat 0 78%/0% 62%;-webkit-box-decoration-break:clone;box-decoration-break:clone;border-radius:.18em .4em .22em .35em;animation:mk 1.1s cubic-bezier(.6,.05,.2,1) .5s forwards}
@@ -64,22 +65,23 @@ a:focus-visible,.swl:focus-visible{outline:2px solid #F2F0EA;outline-offset:3px;
 </head>
 <body>
 <div class="root" style="--ac: #38BDF8; position: relative; overflow-x: clip; min-height: 100vh; background-color: #16191D;  color: #F2F0EA; font-family: 'Space Grotesk', system-ui, sans-serif; padding: 16px 16px 64px; box-sizing: border-box; font-size: 1.0625rem; line-height: 1.6">
-<input class="sw" type="radio" name="tema" id="t1" checked><input class="sw" type="radio" name="tema" id="t2"><input class="sw" type="radio" name="tema" id="t3"><input class="sw" type="radio" name="tema" id="t4">
-<div class="mono code" aria-hidden="true" style="top: 120px; left: 24px; font-size: 0.8125rem; color: rgba(242,240,234,0.14); filter: blur(2px); transform: rotate(-2deg)">&lt;section class="hero"&gt;<br>&nbsp;&nbsp;&lt;h1&gt;Zayn&lt;/h1&gt;<br>&lt;/section&gt;</div>
-<div class="mono code" aria-hidden="true" style="top: 560px; right: 40px; font-size: 0.8125rem; color: rgba(242,240,234,0.16); filter: blur(0px); transform: rotate(1.5deg)">function bangun(ide) {<br>&nbsp;&nbsp;return desain(ide)<br>&nbsp;&nbsp;&nbsp;&nbsp;.rapi().teliti();<br>}</div>
-<div class="mono code" aria-hidden="true" style="top: 820px; left: 20px; font-size: 0.9375rem; color: rgba(242,240,234,0.13); filter: blur(4px); transform: rotate(-1.5deg)">.kartu:hover {<br>&nbsp;&nbsp;transform: rotate(.8deg);<br>&nbsp;&nbsp;border: 1px solid #38BDF8;<br>}</div>
-<div class="mono code" aria-hidden="true" style="top: 1000px; right: 24px; font-size: 0.875rem; color: rgba(242,240,234,0.15); filter: blur(6px); transform: rotate(2deg)">git commit -m "rilis donasi"<br>git push origin main</div>
-<div class="mono code" aria-hidden="true" style="top: 1480px; right: 28px; font-size: 0.8125rem; color: rgba(242,240,234,0.15); filter: blur(0px); transform: rotate(-1deg)">npm run build<br>✓ astro build selesai<br>✓ deploy ke cloudflare</div>
-<div class="mono code" aria-hidden="true" style="top: 1700px; left: 28px; font-size: 0.8125rem; color: rgba(242,240,234,0.14); filter: blur(3px); transform: rotate(1.5deg)">SELECT * FROM donatur<br>&nbsp;&nbsp;WHERE peran = 'amil';</div>
-<div class="mono code" aria-hidden="true" style="top: 1960px; right: 20px; font-size: 0.9375rem; color: rgba(242,240,234,0.13); filter: blur(7px); transform: rotate(-2deg)">&lt;Route path="/admin"<br>&nbsp;&nbsp;role="fundraiser" /&gt;</div>
-<div class="mono code" aria-hidden="true" style="top: 2240px; left: 24px; font-size: 0.8125rem; color: rgba(242,240,234,0.15); filter: blur(1px); transform: rotate(1deg)">const donasi = {<br>&nbsp;&nbsp;qris: true,<br>&nbsp;&nbsp;transfer: true,<br>};</div>
-<div class="mono code" aria-hidden="true" style="top: 2560px; right: 36px; font-size: 0.8125rem; color: rgba(242,240,234,0.17); filter: blur(0px); transform: rotate(0deg)">// ide → desain → bangun → rilis</div>
-<div class="mono code" aria-hidden="true" style="top: 2820px; left: 30px; font-size: 0.9375rem; color: rgba(242,240,234,0.13); filter: blur(5px); transform: rotate(-1.5deg)">body {<br>&nbsp;&nbsp;font-family: "Space Grotesk";<br>&nbsp;&nbsp;background: #16191D;<br>}</div>
-<div class="mono code" aria-hidden="true" style="top: 3100px; right: 24px; font-size: 0.8125rem; color: rgba(242,240,234,0.16); filter: blur(0px); transform: rotate(1.5deg)">const rapi = true;<br>const teliti = true;<br>const rendahHati = true;</div>
-<div class="mono code" aria-hidden="true" style="top: 3340px; left: 26px; font-size: 0.8125rem; color: rgba(242,240,234,0.16); filter: blur(2px); transform: rotate(0deg)">zaynlabs.ai.id<br>&gt; online_</div>
+<div class="mono code" aria-hidden="true" data-t="&lt;section class=&quot;hero&quot;>&#10;  &lt;h1>Zayn&lt;/h1>&#10;&lt;/section>" style="top: 120px; left: 24px; font-size: 0.8125rem; color: rgba(242,240,234,0.14); filter: blur(2px); transform: rotate(-2deg)"></div>
+<div class="mono code" aria-hidden="true" data-t="function bangun(ide) {&#10;  return desain(ide)&#10;    .rapi().teliti();&#10;}" style="top: 560px; right: 40px; font-size: 0.8125rem; color: rgba(242,240,234,0.16); filter: blur(0px); transform: rotate(1.5deg)"></div>
+<div class="mono code" aria-hidden="true" data-t=".kartu:hover {&#10;  transform: rotate(.8deg);&#10;  border: 1px solid #38BDF8;&#10;}" style="top: 820px; left: 20px; font-size: 0.9375rem; color: rgba(242,240,234,0.13); filter: blur(4px); transform: rotate(-1.5deg)"></div>
+<div class="mono code" aria-hidden="true" data-t="git commit -m &quot;rilis donasi&quot;&#10;git push origin main" style="top: 1000px; right: 24px; font-size: 0.875rem; color: rgba(242,240,234,0.15); filter: blur(6px); transform: rotate(2deg)"></div>
+<div class="mono code" aria-hidden="true" data-t="npm run build&#10;✓ astro build selesai&#10;✓ deploy ke cloudflare" style="top: 1480px; right: 28px; font-size: 0.8125rem; color: rgba(242,240,234,0.15); filter: blur(0px); transform: rotate(-1deg)"></div>
+<div class="mono code" aria-hidden="true" data-t="SELECT * FROM donatur&#10;  WHERE peran = 'amil';" style="top: 1700px; left: 28px; font-size: 0.8125rem; color: rgba(242,240,234,0.14); filter: blur(3px); transform: rotate(1.5deg)"></div>
+<div class="mono code" aria-hidden="true" data-t="&lt;Route path=&quot;/admin&quot;&#10;  role=&quot;fundraiser&quot; />" style="top: 1960px; right: 20px; font-size: 0.9375rem; color: rgba(242,240,234,0.13); filter: blur(7px); transform: rotate(-2deg)"></div>
+<div class="mono code" aria-hidden="true" data-t="const donasi = {&#10;  qris: true,&#10;  transfer: true,&#10;};" style="top: 2240px; left: 24px; font-size: 0.8125rem; color: rgba(242,240,234,0.15); filter: blur(1px); transform: rotate(1deg)"></div>
+<div class="mono code" aria-hidden="true" data-t="// ide → desain → bangun → rilis" style="top: 2560px; right: 36px; font-size: 0.8125rem; color: rgba(242,240,234,0.17); filter: blur(0px); transform: rotate(0deg)"></div>
+<div class="mono code" aria-hidden="true" data-t="body {&#10;  font-family: &quot;Space Grotesk&quot;;&#10;  background: #16191D;&#10;}" style="top: 2820px; left: 30px; font-size: 0.9375rem; color: rgba(242,240,234,0.13); filter: blur(5px); transform: rotate(-1.5deg)"></div>
+<div class="mono code" aria-hidden="true" data-t="const rapi = true;&#10;const teliti = true;&#10;const rendahHati = true;" style="top: 3100px; right: 24px; font-size: 0.8125rem; color: rgba(242,240,234,0.16); filter: blur(0px); transform: rotate(1.5deg)"></div>
+<div class="mono code" aria-hidden="true" data-t="zaynlabs.ai.id&#10;> online_" style="top: 3340px; left: 26px; font-size: 0.8125rem; color: rgba(242,240,234,0.16); filter: blur(2px); transform: rotate(0deg)"></div>
 <div class="stack" style="position: relative; max-width: 1040px; margin: 0 auto; display: flex; flex-direction: column; gap: 64px">
 
 <div class="drift" role="banner" style="animation-duration: 14s; border-radius: 28px; padding: clamp(24px, 5vw, 48px); display: flex; flex-direction: column; gap: 20px">
+<input class="sw" type="radio" name="tema" id="t1" checked><input class="sw" type="radio" name="tema" id="t2"><input class="sw" type="radio" name="tema" id="t3"><input class="sw" type="radio" name="tema" id="t4">
+
 <div style="display: contents">
 <div role="img" aria-label="zaynlabs" style="display: flex; align-items: flex-start; font-size: 1.75rem; letter-spacing: -0.04em; line-height: 1"><span style="font-weight: 700">zayn</span><span style="font-weight: 400; color: #C7CBD3">labs</span><span class="cursor" aria-hidden="true" style="display: block; width: 0.5em; height: 0.11em; background: #38BDF8; margin: 0.75em 0 0 0.11em"></span></div>
 <h1 style="margin: 0; font-weight: 500; font-size: clamp(2.125rem, 1rem + 5.2vw, 4rem); line-height: 1.05; letter-spacing: -0.03em">Zayni Tsabit Salam<span class="cursor" aria-hidden="true" style="display: inline-block; width: 0.11em; height: 0.82em; margin-left: 0.14em; vertical-align: -0.04em; background: #38BDF8"></span></h1>
